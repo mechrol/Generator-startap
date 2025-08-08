@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 text-slate-900;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 via-accent-500 to-primary-700 bg-clip-text text-transparent;
+  }
+}
